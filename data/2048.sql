@@ -1,0 +1,13 @@
+﻿SET NAMES UTF8;
+DROP DATABASE IF EXISTS game2048;
+CREATE DATABASE game2048 charset=utf8;
+
+USE game2048;
+CREATE TABLE record(
+rid INT(4) PRIMARY KEY AUTO_INCREMENT,
+player VARCHAR(20),
+code VARCHAR(30),
+score INT(6),
+rank INT(3)
+)
+
