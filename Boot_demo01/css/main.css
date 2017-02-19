@@ -1,0 +1,266 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.ttf');
+}
+body {
+  font-family: 'iconmoon';
+  background: #fff;
+  font-size: 12px;
+}
+#main-header {
+  margin-top: 7em;
+  margin-bottom: 7em;
+}
+#main-header ul {
+  margin-top: 2em;
+}
+#main-header ul li {
+  margin-left: 2em;
+  position: relative;
+}
+#main-header ul li:first-child:after,
+#main-header ul li:nth-child(2):after {
+  content: ' ';
+  position: absolute;
+  right: -1.5em;
+  bottom: 49%;
+  display: block;
+  width: 15px;
+  height: 2px;
+  background: #7ee383;
+}
+#main-header p {
+  color: #7ee383;
+}
+#main-header h4 {
+  color: #555;
+}
+/**
+ * common set
+ */
+.rel {
+  position: relative;
+}
+.abs {
+  position: absolute;
+}
+.x-space-bg,
+.y-space-bg {
+  margin-bottom: 100px;
+}
+.x-space-md,
+.y-space-md {
+  margin-bottom: 60px;
+}
+.x-space-sm,
+.y-space-sm {
+  margin-bottom: 30px;
+}
+.img-full {
+  width: 100%;
+}
+.indent {
+  text-indent: 4em;
+}
+.gray {
+  background: #F5F8F5;
+}
+.inside-space {
+  padding-bottom: 20px;
+}
+@media screen (min-device-width: 992px) {
+  .wide-container {
+    width: 100%;
+    margin: auto;
+  }
+}
+/**
+ * banner
+ */
+.banner {
+  margin: auto;
+  padding-bottom: 50px;
+  width: 80%;
+}
+.banner img {
+  width: 100%;
+}
+.carousel-indicators {
+  bottom: -50px;
+}
+.carousel-indicators li {
+  background: #aaa;
+}
+.carousel-indicators li.active {
+  border: 2px solid #7ee383;
+}
+#main-carousel .glyphicon {
+  font-size: 40px;
+}
+/**
+ * content
+ */
+.uline {
+  border-bottom: 2px solid #333;
+  display: inline-block;
+}
+.topic-item .card-img-top .glyphicon {
+  font-size: 60px;
+  color: #7ee383;
+}
+.topic-item .card-text {
+  font-size: 16px;
+  color: #555;
+}
+.side-img {
+  height: 500px;
+  background: url(../images/slide_2.jpg) no-repeat;
+  background-size: 100% 100%;
+}
+.side-space {
+  padding: 0 30px;
+}
+.side-info {
+  padding-top: 50px;
+}
+.side-info p {
+  line-height: 40px;
+  font-size: 16px;
+}
+.side-info a {
+  padding: 20px 50px;
+  border-radius: 0;
+  border: none;
+  background: #7ee383;
+}
+.side-info a:hover {
+  background: green;
+}
+@media screen (max-device-width: 768px) {
+  .side-info .col-xs-10 {
+    padding-left: 50px;
+  }
+}
+.sub-carou-title {
+  height: 220px;
+  padding-top: 50px;
+}
+.sub-carou-title p {
+  line-height: 35px;
+  font-size: 22px;
+  color: #aaa;
+}
+.press {
+  padding-top: 50px;
+}
+.press-cell {
+  padding: 20px;
+  background: #fff;
+  margin-bottom: 20px;
+}
+.press-cell p {
+  font-size: 14px;
+}
+.press-cell .img-cell {
+  background-size: cover;
+  height: 200px;
+  padding: 0;
+}
+.press-cell .img-cover {
+  height: 200px;
+  width: 100%;
+  background: #555;
+  opacity: 0;
+  transition: all .3s linear;
+}
+.press-cell .img-cover:hover {
+  opacity: .6;
+}
+.press-cell .img-cover:hover .img-btn {
+  display: block;
+}
+.press-cell .img-btn {
+  display: none;
+  border-radius: 0;
+  padding: 10px 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: #fff;
+  background: #333;
+  transform: translate(-50%, -50%);
+}
+.press-cell .img-btn:hover {
+  background: #000;
+}
+.press-cell .show-cell {
+  transition: all 1s linear;
+}
+.press-cell .show-cell {
+  opacity: .2;
+  position: relative;
+}
+.press-cell .show-cell.active {
+  opacity: 1;
+  position: static;
+}
+.img-cell-1 {
+  background: url(../images/slide_1.jpg);
+}
+.img-cell-2 {
+  background: url(../images/slide_2.jpg);
+}
+.img-cell-3 {
+  background: url(../images/slide_3.jpg);
+}
+.img-cell-4 {
+  background: url(../images/slide_4.jpg);
+}
+img.media-object {
+  width: 300px;
+}
+.media-body {
+  widht: 200px;
+}
+.end-btn {
+  border-radius: 0;
+  background: #F5F8F5;
+  border: 1px solid #ccc;
+  padding: 15px 60px;
+  transition: all .3s linear;
+}
+.end-btn:hover {
+  background: #222;
+  color: #fff;
+  border: 1px solid #fff;
+}
+.footer {
+  padding-top: 30px;
+}
+.footer .input-group-addon {
+  background: #7ee383;
+  cursor: pointer;
+}
+.footer p {
+  font-size: 16px;
+  line-height: 30px;
+}
+.footer input.form-control {
+  height: 50px;
+}
+.light-list a {
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+  color: #7ee383;
+}
+.end {
+  height: 100px;
+  background: #555;
+  widht: 100%;
+}
+.end p {
+  line-height: 100px;
+  height: 100px;
+  color: #fff;
+}

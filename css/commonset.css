@@ -1,0 +1,30 @@
+body,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,div,pre,form,input,button,fieldset,textarea,p,th,td{
+	padding:0;margin:0;
+}
+img,html,body,iframe,fieldset{border:0;}
+ul,ol,li{list-style:none;}
+h1,h2,h3,h4,h5,h6{color:#fff;font-weight:bold;font-size:100%;font-family:'黑体','微软雅黑';}
+th{font-weight:bold;font-style:normal;text-align:left;}
+em,strong{font-weight:bold;font-style:normal;}
+body,select,input,button,span,p{font-size:12px;color:#fff;font-family:'黑体','微软雅黑';}
+body{background:#fff;}
+a,button{cursor:pointer;}
+a{text-decoration:none;color:#fff;}
+a:hover{text-decoration:none;color:#fff;}
+img{vertical-align:middle;}
+
+.cls:before{
+	content:'';
+	display:table;
+	 }
+.cls:after{
+ content:'';
+ display:block;
+ clear:both;
+}
+.float-left{
+	float:left;
+}
+.text-center{
+	text-align:center;
+}

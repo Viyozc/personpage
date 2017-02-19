@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="css/2048.css">
+
+</head>
+<body>
+<p>
+    TOP:<span id="top">4096</span><br>
+    SCORE:<span id="score">0</span>
+</p>
+<div id="playground">
+    <div id="c00" class="cell"></div>
+    <div id="c01" class="cell"></div>
+    <div id="c02" class="cell"></div>
+    <div id="c03" class="cell"></div>
+    <div id="c10" class="cell"></div>
+    <div id="c11" class="cell"></div>
+    <div id="c12" class="cell"></div>
+    <div id="c13" class="cell"></div>
+    <div id="c20" class="cell"></div>
+    <div id="c21" class="cell"></div>
+    <div id="c22" class="cell"></div>
+    <div id="c23" class="cell"></div>
+    <div id="c30" class="cell"></div>
+    <div id="c31" class="cell"></div>
+    <div id="c32" class="cell"></div>
+    <div id="c33" class="cell"></div>
+</div>
+
+
+<!-- <div id="start">
+    <div class="start">
+       
+    </div>
+</div> -->
+
+
+<div id="gameOver"><!-- 半透明遮罩 -->
+<div>
+    <p class='end'>
+        GAME OVER!
+        <br>
+        SCORE: <span id="final"></span><br>
+    </p>
+    <ul class=>
+        <li>
+            <button class='btn' onclick='game.start()'>Try again!</button>
+           
+            <button class='btn' id='save'>Save Score</button>
+        </li>
+        <li class='score-blank'>   
+                <input type="text" placeholder= "Enter your name~" class= 'player' name='player'> <br>
+                <input placeholder='Enter your code!' type="password" class='code' name='code'>
+                <br>
+                <button class='btn' id='submit'>SUBMIT</button>
+
+            
+
+        </li>
+        <li class='rank'>
+           <table>
+                <thead>
+                    <tr>
+                    <th>序号</th>
+                    <th>玩家</th>
+                    <th>分数</th>
+                    </tr>
+                </thead>
+                <tbody class>
+                    <tr>
+                        <td>123</td>
+                        <td>vivi</td>
+                        <td>1234</td>
+                    </tr>
+                </tbody>
+            </table> 
+        </li> 
+    </ul>
+</div>    
+</div>
+
+
+<script src = "js/2048.js">
+
+
+</script>
+</body>
+</html>

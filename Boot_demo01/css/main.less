@@ -1,0 +1,309 @@
+@font-face{
+  font-family:'icomoon';
+  src:url('fonts/icomoon.ttf');
+}
+
+body{
+  font-family: 'iconmoon';
+  background:#fff;
+  font-size:12px;
+}
+@green:#7ee383;
+#main-header {
+
+  margin-top: 7em;
+  margin-bottom: 7em;
+  ul{
+    margin-top:2em;
+
+    li {
+      margin-left: 2em;
+      position:relative;
+    }
+    li:first-child:after,li:nth-child(2):after{
+      content:' ';
+      position:absolute;
+      right:-1.5em;
+      bottom:50%-1px;
+      display:block;
+      width:15px;
+      height:2px;
+      background:@green;
+    }
+  }
+
+  p{
+    color:@green;
+  }
+  h4{
+    color:#555;
+  }
+}
+
+/**
+ * common set
+ */
+.rel{
+  position:relative;
+}
+.abs{
+  position:absolute;
+}
+.x-space-bg,
+.y-space-bg{
+  margin-bottom:100px;
+}
+.x-space-md,
+.y-space-md{
+  margin-bottom:60px;
+}
+.x-space-sm,
+.y-space-sm{
+  margin-bottom:30px;
+}
+.img-full{
+  width:100%;
+}
+.indent{
+  text-indent: 4em;
+}
+.gray{
+  background:#F5F8F5;
+}
+.inside-space{
+  padding-bottom:20px;
+}
+
+@media screen (min-device-width:992px){
+.wide-container{
+  width:100%;
+  margin:auto;
+}  
+}
+
+/**
+ * banner
+ */
+.banner{
+  margin:auto;
+  padding-bottom:50px;
+  width:80%;
+  img{
+    width:100%;
+
+
+  }
+}
+
+.carousel-indicators{
+  bottom:-50px;
+  li{
+    background:#aaa;
+  }
+  li.active{
+    border:2px solid @green;
+  }
+}
+#main-carousel .glyphicon{
+ 
+
+  font-size:40px;
+  
+
+}
+
+/**
+ * content
+ */
+.uline{
+  border-bottom:2px solid #333;
+  display:inline-block;
+
+}
+.topic-item{
+  .card-img-top{
+    .glyphicon{
+      font-size:60px;
+      color:@green;
+    }
+  }
+
+  .card-text{
+    font-size:16px;
+    color:#555;
+  }
+}
+
+// two col part
+.side-img{
+  height:500px;
+  background:url(../images/slide_2.jpg) no-repeat;
+  background-size:100% 100%;
+}
+.side-space{
+  padding:0 30px;
+}
+.side-info{
+  padding-top:50px;
+
+  p{
+    line-height:40px;
+    font-size:16px;
+
+  }
+  a{
+    padding:20px 50px;
+    border-radius:0;
+    border:none;
+    background: @green;
+
+  }
+  a:hover{
+    background:green;
+  }
+
+}
+@media screen (max-device-width:768px){
+  .side-info .col-xs-10{
+    padding-left:50px;
+  }
+}
+
+// sub carousel
+// 
+.sub-carou-title{
+  height:220px;
+  padding-top:50px;
+  p{
+    line-height: 35px;
+    font-size:22px;
+    color:#aaa;
+  }
+
+}
+
+// press part
+.press{
+  padding-top:50px;
+}
+.press-cell{
+  padding:20px;
+  
+  background:#fff;
+  margin-bottom:20px;
+  p{
+    font-size:14px;
+  }
+  .img-cell{
+    background-size:cover;
+    height:200px;
+    padding:0;
+    
+  }
+  .img-cover{
+    height:200px;
+    width:100%;
+    background:#555;
+    opacity:0;
+    transition:all .3s linear;
+  }
+  .img-cover:hover{
+    opacity:.6;
+  }
+  .img-cover:hover .img-btn{
+    display:block;
+  }
+  .img-btn{
+    display:none;
+    border-radius:0;
+    padding:10px 30px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    color:#fff;
+    background: #333;
+    transform:translate(-50% ,-50%);
+  }
+  .img-btn:hover{
+    background:#000;
+
+
+  }
+  .show-cell{
+    transition:all 1s linear;
+  }
+  .show-cell{
+
+    opacity:.2;
+    position:relative;
+    
+  }
+  .show-cell.active{
+    opacity:1;
+    position:static;
+    
+  }
+  
+}
+.img-cell-1{
+  background:url(../images/slide_1.jpg);
+}
+.img-cell-2{
+  background:url(../images/slide_2.jpg);
+}
+.img-cell-3{
+  background:url(../images/slide_3.jpg);
+}
+.img-cell-4{
+  background:url(../images/slide_4.jpg);
+}
+img.media-object{
+  width:300px;
+}
+.media-body{
+    widht:200px;
+}
+.end-btn{
+  border-radius:0;
+  background:#F5F8F5;
+  border:1px solid #ccc;
+  padding:15px 60px;
+  transition:all .3s linear;
+}
+.end-btn:hover{
+  background:#222;
+  color:#fff;
+  border:1px solid #fff;
+}
+
+.footer{
+  padding-top:30px;
+  .input-group-addon{
+    background:@green;
+    cursor:pointer;
+  }
+  p{
+    font-size:16px;
+    line-height:30px;
+  }
+  input.form-control{
+    height:50px;
+
+  }
+}
+.light-list a{
+  font-size:16px;
+  height:30px;
+  line-height:30px;
+  color:@green;
+}
+.end{
+  height:100px;
+  background:#555;
+  widht:100%;
+  p{
+    line-height:100px;
+    height:100px;
+    color:#fff;
+  }
+}
