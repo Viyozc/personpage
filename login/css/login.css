@@ -61,16 +61,12 @@ a{
 	width:30px;
 	height:30px;
 	margin-top:25px;
-	margin-right:30px;
+	margin-left:30px;
 	cuisor:pointer;
 }
 
 
-// modal
-// #login-modal .modal-dialog{
-// 	background: #fff;
-// 	margin:auto;
-// }
+
 #login-modal{
 	background: url('../img/banner.jpg') repeat;
 }
@@ -178,10 +174,24 @@ a{
 	background:url(../img/pattern.jpg) repeat;
 	height:650px;
 	margin:0 10%;
-	padding:20px 60px 0 60px;
+	padding:20px 0 0 0;
 	border-radius: 15px;
 	transition:all .3s linear;
 }
+
+// @media screen (min-device-width:768px){
+// 	.login-zone{
+// 		padding:20px 60px 0 60px;
+// 	}
+// }
+.login-zone input{
+	border-left:0;
+	border-right:0;
+}
+.checkbox>label,
+.login-zone>.form-group p{
+	text-indent: 20px;
+};
 .login-zone:hover{
 	box-shadow: 1px 1px 1px 1px #000;
 }
@@ -193,14 +203,21 @@ header{
 	padding-bottom:15px;
 	border-bottom:1px dotted #bbb;
 }
-.login-header:before{
-	content:'';
-	display:block;
-	width:30px;height:30px;
-	background:url('../img/pencil.png') no-repeat;
-	position:absolute;
-	left:100px;
-	top:0;
+
+// .login-header:before{
+// 	content:'';
+// 	display:block;
+// 	width:30px;height:30px;
+// 	background:url('../img/pencil.png') no-repeat;
+// 	position:absolute;
+// 	left:100px;
+// 	top:0;
+// }
+.pen{
+	display: inline-block;
+	margin-right:10px;
+	width: 30px;height:30px;
+	background: url('../img/pencil.png') no-repeat;
 }
 .form-group{
 	line-height: 22px;
@@ -255,6 +272,8 @@ header{
 	
 
 }
-body{
-	background: url('../img/banner.jpg') repeat;
+
+body {	
+	background: #E15748;
 }
+// background: url('../img/banner.jpg') repeat

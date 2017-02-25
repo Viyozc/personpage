@@ -226,7 +226,7 @@ img.media-object {
   border-radius: 0;
   background: #F5F8F5;
   border: 1px solid #ccc;
-  padding: 15px 60px;
+  padding: 15px 10%;
   transition: all .3s linear;
 }
 .end-btn:hover {
