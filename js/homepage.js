@@ -1,24 +1,31 @@
-$('.cell:not(:first)').click(function () {
-    if ($(this).is(".open")) {
-        $(this).removeClass('open').addClass('close')
-            .children('.content').removeClass('show')
-
-    } else if ($(this).is('.close')) {
+// 主题开关
+// 
+// 
+$(function(){
+    var className = window.localStorage.getItem['bgClass'];
+    console.log(className)
+    if(className)
+    $('body').removeClass().addClass(className);
+})
+$('.stay').click(function () {
+    if ($(this).is('.close')) {
         $(this).removeClass('close').addClass('open')
             .children('.content').addClass('show')
             .parent().siblings('.open:not(#hello)').removeClass('open').addClass('close');
     }
-
-
 })
 
 //主题切换
 $('#theme').on('click','li',function(){
     if(!$(this).is('active')){
-        $(this).addClass('active').siblings().removeClass('active');
-
+        $(this).addClass('active').siblings('.active').removeClass('active');
+        var className = $(this).children('a').attr('data-src');
+        console.log(className)
+        $('body').removeClass().addClass(className)
+        window.localStorage.setItem('bgClass',className)
     }
 })
+$()
 
 $('#container').on('mousedown','#container>div',function(e){
     var left = $(this).position().left;
@@ -165,9 +172,7 @@ $(function(){
         $('.song').html(song);
         $('.singer').html(singer);
     }
-    setSong();
-    
-
+    setSong(); 
 })
 
 //图片列表切换
@@ -214,10 +219,7 @@ $(function(){
             timerPlayer = null;
             
         }
-
     })
-
-
 })
 
 
@@ -238,15 +240,10 @@ $(function(){
     config1.textVertPosition = 0.5;
     config1.waveAnimateTime = 1000;
     var gauge1= loadLiquidFillGauge("fillgauge1", 95, config1);
-    var gauge2= loadLiquidFillGauge("fillgauge2", 90, config1);
-    
-    var gauge3 = loadLiquidFillGauge("fillgauge3", 80, config1);
-   
-    var gauge4 = loadLiquidFillGauge("fillgauge4", 90, config1);
-   
-    var gauge5 = loadLiquidFillGauge("fillgauge5", 85, config1);
-   
+    var gauge2= loadLiquidFillGauge("fillgauge2", 90, config1);    
+    var gauge3 = loadLiquidFillGauge("fillgauge3", 80, config1);   
+    var gauge4 = loadLiquidFillGauge("fillgauge4", 90, config1);   
+    var gauge5 = loadLiquidFillGauge("fillgauge5", 85, config1);   
     var gauge6 = loadLiquidFillGauge("fillgauge6", 65, config1);
-
 })
    

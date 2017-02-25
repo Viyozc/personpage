@@ -13,10 +13,27 @@ a,button{cursor:pointer;}
 a{text-decoration:none;color:#fff;}
 a:hover{text-decoration:none;color:#fff;}
 img{vertical-align:middle;}
-body{
+.theme4{
 	background: url('images/ribbons4.png') top left no-repeat, 
 	url('images/ribbonsbottom.png') bottom right no-repeat fixed,
 	url('images/bgdark.png') repeat-x #111;
+}
+.theme1{
+	background: url('../images/bgbubble.png')  repeat;
+
+}
+.theme2{
+	background: url('../images/bgcross.png') repeat;
+}
+.theme3{
+	background: url('../images/bgdiamond.png') repeat;
+}
+.theme5{
+
+	background: url('../images/squares.png') bottom right no-repeat #111 fixed ;
+}
+.theme6{
+	background: url('../images/splat02.png') top right no-repeat #111;
 }
 #container{
 	width:965px;
