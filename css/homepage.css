@@ -623,7 +623,7 @@ ul.nav-bar{
     border:2px solid #AC2B94;
     overflow: hidden;
     cursor:pointer;
-    
+
 }
 
 
@@ -641,13 +641,13 @@ ul.nav-bar{
 	overflow:hidden;
 }
 #who .content p{
-    font-size:14px;
+    font-size:16px;
 }
 #who .content>h1{
 	height:50px;
 	display:block;
 	line-height:50px;
-	font-size:40px;
+	font-size:30px;
 	text-align:center;
     margin-bottom:25px;
 } 
@@ -658,7 +658,8 @@ ul.nav-bar{
 	padding-right:20px;
 }
 #who .content div.intro{
-	width:374px;
+	height:50px;
+	overflow: hidden;
 }
 
 
@@ -696,10 +697,30 @@ ul.nav-bar{
 #who .content .two-column>p{
 	font-size:14px;
 }
-#who h3{
-	font-size:32px;
-	text-align:center;
-	padding:10px 0;
+#who .intro h1{
+	font-size: 22px;
+}
+
+#who svg{
+	margin-bottom:20px;
+	width:181px;
+}
+#web-class{
+	float:left;
+	position:relative;
+	width:181px;
+	// overflow: hidden;
+	height:181px;
+	margin-bottom:40px;
+}
+#who #web-class>i{
+	display: block;
+	width:181px;
+	text-align: center;
+	font-size:22px;
+	position: absolute;
+	bottom:-10px;
+	font-style: normal;
 }
 
 
@@ -963,4 +984,8 @@ ul.nav-bar{
 }
 .right-colume{
 	overflow: hidden;
+}
+
+.liquidFillGaugeText{ 
+	font-family: Helvetica; font-weight: bold; 
 }

@@ -222,4 +222,31 @@ $(function(){
 
 
 
+/**
+ * D3图表设置
+ */
 
+
+$(function(){
+    
+    var config1 = liquidFillGaugeDefaultSettings();
+    config1.circleColor = "#D71C62";
+    config1.textColor = "#000";
+    config1.waveTextColor = "#000";
+    config1.waveColor = "#fff";
+    config1.circleThickness = 0.15;
+    config1.textVertPosition = 0.5;
+    config1.waveAnimateTime = 1000;
+    var gauge1= loadLiquidFillGauge("fillgauge1", 95, config1);
+    var gauge2= loadLiquidFillGauge("fillgauge2", 90, config1);
+    
+    var gauge3 = loadLiquidFillGauge("fillgauge3", 80, config1);
+   
+    var gauge4 = loadLiquidFillGauge("fillgauge4", 90, config1);
+   
+    var gauge5 = loadLiquidFillGauge("fillgauge5", 85, config1);
+   
+    var gauge6 = loadLiquidFillGauge("fillgauge6", 65, config1);
+
+})
+   
