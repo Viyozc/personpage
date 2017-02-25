@@ -616,11 +616,14 @@ ul.nav-bar{
     transition:none;
 }
 #container .cell.close{
+	box-sizing: border-box;
     width:181px;
     height:181px;
-    background:#0099cc;
+    background:rgba(0,0,0,0.5);
+    border:2px solid #AC2B94;
     overflow: hidden;
     cursor:pointer;
+    
 }
 
 
@@ -957,4 +960,7 @@ ul.nav-bar{
 	background:#000;
 	opacity:.8;
 	// z-index:999;
+}
+.right-colume{
+	overflow: hidden;
 }

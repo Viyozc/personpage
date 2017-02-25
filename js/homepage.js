@@ -1,4 +1,4 @@
-$('.cell').click(function () {
+$('.cell:not(:first)').click(function () {
     if ($(this).is(".open")) {
         $(this).removeClass('open').addClass('close')
             .children('.content').removeClass('show')
@@ -6,7 +6,7 @@ $('.cell').click(function () {
     } else if ($(this).is('.close')) {
         $(this).removeClass('close').addClass('open')
             .children('.content').addClass('show')
-            .parent().siblings('.open').removeClass('open').addClass('close');
+            .parent().siblings('.open:not(#hello)').removeClass('open').addClass('close');
     }
 
 
@@ -30,34 +30,6 @@ $('#container').on('mousedown','#container>div',function(e){
 $('#img-wall').click(function(){
     location.href='imagewall.html';
 })
-
-// $('.cell').mousedown(function(){
-//     $_this = $(this);
-//     var t = null;
-//     setTimeout(function(){
-//         console.log($_this)
-//         var deg = 0;
-//         var flag = 1;
-//         var step = 4;
-
-//       var t =  setInterval(function(){
-            
-//            console.log($_this)
-//             $_this.css('transform','rotate('+(deg+flag*step)+'deg)');
-//             console.log(deg+flag*step)
-//             deg+=flag*step;
-//             if(deg>10&&flag==1){
-//                 flag=-1;
-//             }else if(deg<-10&flag==-1){
-//                 flag=1;
-//             }
-            
-//         },16)
-//     },1000)
-//     $_this.mouseup(function(){})
-// })
-
-
 
 
 
