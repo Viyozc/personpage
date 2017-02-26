@@ -180,7 +180,7 @@ a{
 
 	background:url(../img/pattern.jpg) repeat;
 	height:650px;
-	margin:0 -10px;
+	margin:0 -10px 40px;
 	padding:20px 0 0 0;
 	border-radius: 15px;
 	transition:all .3s linear;
@@ -212,15 +212,7 @@ header{
 	border-bottom:1px dotted #bbb;
 }
 
-// .login-header:before{
-// 	content:'';
-// 	display:block;
-// 	width:30px;height:30px;
-// 	background:url('../img/pencil.png') no-repeat;
-// 	position:absolute;
-// 	left:100px;
-// 	top:0;
-// }
+
 .pen{
 	display: inline-block;
 	margin-right:10px;
@@ -282,6 +274,5 @@ header{
 }
 
 body {	
-	background: #E15748;
+	background: #ddd;
 }
-// background: url('../img/banner.jpg') repeat
