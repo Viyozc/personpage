@@ -23,13 +23,11 @@
 	</style>
 </head>
 <body>
-
-
 	<div class="carousel show bg-img hidden-xs"  id='bg-img'>
 		<div class="carousel-inner">
 			<div class="item bg-1 active"><img src="./img/backgrounds/1.jpg" alt="">
 			</div>
-		<!-- 	<div class="item bg-2">
+		<!--<div class="item bg-2">
 				<img src="./img/backgrounds/2.jpg" alt="">
 			</div>
 			<div class="item bg-3">
@@ -37,30 +35,21 @@
 			</div> -->
 		</div>
 	</div>
-
-
-
 	<header>
 		<div class="navbar navbar-default top-header">
 			<div class="container">
 				<div class="navbar-header">
-					<div class="navbar-brand"><span class='oleo'>Register.</span></div>
-					
+					<div class="navbar-brand"><span class='oleo'>Register.</span></div>					
 				</div>
-
-
-					<a class="navbar-right nav-go nav-home hidden-xs" href='../index.html'>
-						<img src="img/home.png" alt="主页" title='主页' data-toggle='tooltip' data-placement='bottom'>
-					</a>
-					<a class="navbar-right nav-go nav-login hidden-xs" data-toggle='modal' href='#login-modal'>
-						<img src="img/blog.png" alt="登录" title='登录' data-toggle='tooltip' data-placement='bottom'>
-					</a>
-
+				<a class="navbar-right nav-go nav-home hidden-xs" href='../index.html'>
+					<img src="img/home.png" alt="主页" title='主页' data-toggle='tooltip' data-placement='bottom'>
+				</a>
+				<a class="navbar-right nav-go nav-login hidden-xs" data-toggle='modal' href='#login-modal'>
+					<img src="img/blog.png" alt="登录" title='登录' data-toggle='tooltip' data-placement='bottom'>
+				</a>
 			</div>
 		</div>
-	</header>
-
-	
+	</header>	
 	<!-- modal frame -->
 	<div class="modal fade" id='login-modal'>
 		<div class="login-main">
@@ -77,10 +66,6 @@
 			</div>
 		</div>
 	</div>
-
-
-
-
 	<div class="container">
 		<div class="row">
 			<div class="col visible-md visible-lg col-md-4">
@@ -92,38 +77,61 @@
 			<div class="col col-md-8 col-xs-12">
 				<div class="login-zone">
 					<h2 class='text-center login-header'><span class='pen'></span>REGISTER</span></h2>
-					<div class="form-group">
+					<div class="form-group relative ">
 						<label for="" class="control-label center-block">
-						<p>  USERNAME</p>						
-						<input type="text" class='form-control check-ok' placeholder="用户名为 6-10位大小写字母、数字、下划线..">
+						<p>USERNAME</p>						
+						<input type="text" name='uname' class='form-control check-ok' placeholder="用户名为 6-10位大小写字母、数字、下划线..">
 						</label>
-					</div>
 
-					<div class="form-group">
+
+						<span class='check-txt'>
+							<i class='glyphicon glyphicon-warning-sign'></i>&nbsp;您的用户名格式不正确,请重新输入...
+						</span>						
+
+					</div>
+					<div class="form-group relative">
 						<label for="" class="control-label center-block">
 						<p>PASSWORD</p>
-						<input type="text" class='form-control' placeholder="密码为 6-10位大小写字母、数字、下划线组合..">
+						<input type="password" name='upwd' class='form-control' placeholder="密码为 6-20位大小写字母、数字、下划线组合..">
 						</label>
+
+						<span class='check-txt'>
+							<i class='glyphicon glyphicon-warning-sign'></i>&nbsp;您的密码格式不正确,请重新输入...
+						</span>	
 					</div>
-					<div class="form-group">
+					<div class="form-group relative">
 						<label for="" class="control-label center-block">
 						<p>PASSWORD</p>
-						<input type="text" class='form-control' placeholder="请再次输入您的密码">
+						<input type="password" name='cpwd' class='form-control' placeholder="请再次输入您的密码">
 						</label>
+
+						<span class='check-txt'>
+							<i class='glyphicon glyphicon-warning-sign'></i>&nbsp;您输入的密码与原密码不一致,请重新输入...
+						</span>	
+
 					</div>
-					<div class="form-group">
+					<div class="form-group relative">
 						<label for="" class="control-label center-block">
 						<p>PHONE</p>
 						<p><span class=''></span></p>
-							<input type="text" class='form-control' placeholder="请输入您的电话号码">
+							<input type="text" name='phone' class='form-control' placeholder="请输入您的电话号码">
 						</label>
-					</div>
 
-					<div class="form-group">
+						<span class='check-txt'>
+							<i class='glyphicon glyphicon-warning-sign'></i>&nbsp;您的电话格式不正确,请重新输入...
+						</span>	
+
+					</div>
+					<div class="form-group relative">
 						<label for="" class="control-label center-block">
 						<p>EMAIL</p>
-							<input type="text" class='form-control' placeholder="请输入您的邮箱地址">
+							<input type="text" name='email' class='form-control' placeholder="请输入您的邮箱地址">
 						</label>
+
+						<span class='check-txt'>
+							<i class='glyphicon glyphicon-warning-sign'></i>&nbsp;您的邮箱格式不正确,请重新输入...
+						</span>	
+
 					</div>
 					<div class="checkbox">
 						<label>						
@@ -131,15 +139,11 @@
 							我同意 <span><<注册协议>></span>
 						</label>
 					</div>
-
-					<button class='btn btn-block btn-danger   smit'>SUBMIT</button>	
-					
+					<button class='btn btn-block btn-danger   smit'>SUBMIT</button>						
 				</div>
 			</div>
 		</div>
 	</div>
-
-
 
 	<script src='js/jquery-1.11.3.js'></script>
 	<script src='js/bootstrap.js'></script>

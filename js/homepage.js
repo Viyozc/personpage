@@ -1,6 +1,6 @@
-// 主题开关
-// 
-// 
+/**
+ * 主题开关
+ */
 $(function(){
     var className = window.localStorage.getItem['bgClass'];
     console.log(className)
