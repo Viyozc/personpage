@@ -247,3 +247,34 @@ $(function(){
     var gauge6 = loadLiquidFillGauge("fillgauge6", 65, config1);
 })
    
+/**
+ * loading...加载
+ */
+$(function(){
+    var total = 0;
+    var load = setInterval(function(){
+        console.log(total)
+        if(total>=100){
+            $('.load').addClass('over')
+            clearInterval(load);
+            load=null;
+        }
+    },100)
+    var img1=new Image();
+    img1.src = 'images/ontheroadthumb.jpg'
+    img1.onload = add(25)
+    var img2 = new Image();
+    img2.src= 'images/simonthumb.jpg'
+    img2.onload=add(25)
+    var img3 = new Image();
+    img3.src= 'images/targetthumb.jpg';
+    img3.onload=add(25);
+    var img4 = new Image();
+    img4.src= 'images/sleepthumb.jpg';
+    img4.onload=add(25);
+
+    function add(n){
+        total+=n;
+    }
+
+})
